@@ -68,14 +68,12 @@ class RegisterController extends Controller
         
     }
 
-    public function hesabim($id)
+    public function hesabim()
     {
-
-        $user=User::find($id);
         
        
         
-         return view('shopping.hesabim')->with('user',$user);
+         return view('shopping.hesabim');
         
     }
 

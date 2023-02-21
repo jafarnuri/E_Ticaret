@@ -119,4 +119,4 @@ Route::get('/kategorisil/{id}', [KategoriController::class,'kategorisil']);
     Route::get('/login', [RegisterController::class,'loginnew'])->name('login');
     Route::post('/login_action', [RegisterController::class,'login'])->name('login_action');
     Route::get('/logout', [RegisterController::class,'logout'])->name('logout');
-    Route::get('/hesabim/{id}', [RegisterController::class,'hesabim'])->name('hesabim');
+    Route::get('/hesabim', [RegisterController::class,'hesabim'])->name('hesabim');
